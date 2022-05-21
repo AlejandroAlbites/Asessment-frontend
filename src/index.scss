@@ -1,0 +1,13 @@
+/* abstracts */
+@use "./assets/styles/abstracts/variables";
+@use "./assets/styles/abstracts/mixins";
+
+/* base */
+@use "./assets/styles/base/base";
+@use "./assets/styles/base/resets";
+
+/* components */
+
+@use "./assets/styles/components/App.scss";
+@use "./assets/styles/components/pages/Home.scss";
+@use "./assets/styles/components/ProductCard.scss";

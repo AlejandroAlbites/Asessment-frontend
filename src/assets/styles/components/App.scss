@@ -1,0 +1,19 @@
+.Nav__navigation-options{
+    // position: fixed;
+    background-color: teal;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    .link__navigation-options{
+        padding-left: 40px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        &:hover{
+            color: lightgray;
+        }
+    }
+}
