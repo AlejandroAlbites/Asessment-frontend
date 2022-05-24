@@ -1,3 +1,5 @@
+@import '../abstracts/variables';
+
 .div__block-products{
     display: flex;
     flex-direction: column;
@@ -12,12 +14,12 @@
   
 }
 .h1__products-title{
-    color: rgb(235, 177, 50);
+    color: var(--orange);
     text-align: center;
 }
 .p__loading-get-api{
     font-weight: bold;
     font-size: large;
-    color: gray;
+    color: var(--gray);
     text-align: center;
 }

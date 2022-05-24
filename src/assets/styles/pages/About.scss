@@ -1,8 +1,10 @@
-.about-container{
+@import '../abstracts/variables';
+
+.main__about-container{
     margin:auto;
     width: 800px;
     height: 100vh;
-    background-color: white;
+    background-color: var(--white);
 
     .div__about-container{
         display: flex;
@@ -15,21 +17,28 @@
             width: 350px;
             height: 400px;
             border-radius: 20px;
-            box-shadow: 0px 0px 4px 1px gray;
+            box-shadow: 0px 0px 4px 1px var(--gray);
         }
 
-        .div__item-text{
+        .div__about-text{
             margin: 20px 40px 20px 0px;
-            h1{
+            .h1__name-author{
                 font-size: 20px;
+                color: var(--orange);
             }
-            p {
+            .strong__subtitles-datos{
+                color: var(--orange);
+            }
+            .p__data-descriptions{
                 font-size: 16px;
                 padding-top: 40px;
             }
-
+            ul{
+                padding-top: 10px;
+                li{
+                    padding-top: 10px;
+                }
+            }
         }
-
     }
-
 }

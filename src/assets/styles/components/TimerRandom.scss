@@ -1,0 +1,22 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.div__timer-product-detail{
+    position: absolute;
+    bottom: 14px;
+    left: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.p__card-product-detail{
+    @include button-card-product-detail(var(--orange));
+    &:hover{
+        background-color: var(--orange-hover);
+    }
+}
+.p__card-product-detail-desactive{
+    @include button-card-product-detail(var(--gray))
+    
+}

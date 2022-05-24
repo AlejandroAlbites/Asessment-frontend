@@ -1,0 +1,37 @@
+
+@mixin button-card-product-detail($bgColor) {
+    border-radius: 10px;
+    border: none;
+    background-color: $bgColor;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 4px 12px;
+}
+
+@mixin link-navigation-options($pl) {
+    padding-left: $pl;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    &:hover{
+        color: lightgray;
+    }
+}
+
+@mixin btn-buttons-options-details($color, $bgcolor, $bgcolor-hover ) {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    color: $color;
+    font-weight: bold;
+    background-color: $bgcolor;
+    padding: 6px 16px;
+    &:hover{
+        background-color: $bgcolor-hover;
+    }
+}

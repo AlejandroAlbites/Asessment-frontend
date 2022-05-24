@@ -1,6 +1,8 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
 .Nav__navigation-options{
- 
-    background-color: rgb(235, 177, 50);
+    background-color: var(--orange);
     height: 40px;
     width: 100%;
     display: flex;
@@ -8,21 +10,9 @@
     align-items: center;
     
     .link__navigation-option-home{
-        padding-left: 110px;
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-        &:hover{
-            color: lightgray;
-        }
+        @include link-navigation-options(110px);
     }
     .link__navigation-option-about{
-        padding-left: 30px;
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-        &:hover{
-            color: lightgray;
-        }
+        @include link-navigation-options(30px);
     }
 }

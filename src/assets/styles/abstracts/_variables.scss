@@ -3,24 +3,14 @@
   --font-standard: "Lato", sans-serif;
 
     /*========== Colors ==========*/
-    --Purple: #360a3e;
-    --Purple-navbar: #2a0e33;
-    --White: #fff;
-    --Black: #000;
-    --green-line: #76AA7C;
-    --blue: #3C71A6;
-    --gray: #C4C4C4;
-  
-    /*========= Font-size ========*/
+    --orange: rgb(235, 177, 50);
+    --orange-hover: rgb(216, 162, 46);
+    --lightgray: lightgray;
+    --white: white;
+    --gray: gray;
+    --blue: rgb(88, 184, 216);
+    --blue-hover: rgb(71, 154, 181);
 
-    --Font-sl: 11px;
-    --Font-sm: 13px;
-    --Font-md: 15px;
-    --Font-lg: 18px;
-  
-    /*======= Font-weight ========*/
-    --font-medium: 400;
-    --font-bold: 700;
 }
 
 body {

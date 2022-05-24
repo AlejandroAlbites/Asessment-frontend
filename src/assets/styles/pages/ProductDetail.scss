@@ -1,5 +1,7 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
 .div__product-container{
-    
     margin:auto;
     width: 800px;
     height: 100vh;
@@ -26,10 +28,8 @@
                 font-size: 16px;
                 padding-top: 40px;
             }
-
         }
         .div__btn-container{
-            
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -37,48 +37,22 @@
             margin-top: 20px;
             
             .btn-buy{
-                cursor: pointer;
-                padding: 6px 16px;
-                border-radius: 8px;
-                border: none;
-                color: white;
-                font-weight: bold;
-                background-color: rgb(88, 184, 216);
-                &:hover{
-                    background-color: rgb(71, 154, 181);
-                }
+                @include btn-buttons-options-details( var(--white), var(--blue), var(--blue-hover));
             }
             .btn-cart{
-                cursor: pointer;
+                @include btn-buttons-options-details( var(--white), var(--orange), var(--orange-hover));
                 margin: 0px 20px;
-                padding: 6px 16px;
-                border-radius: 8px;
-                border: none;
-                color: white;
-                font-weight: bold;
-                background-color: rgb(235, 177, 50);
-                &:hover{
-                    background-color: rgb(190, 142, 39);
-                }
             }
-
-
             .btn-watchlist{
-                cursor: pointer;
+                @include btn-buttons-options-details( var(--gray), var(--white), var(--orange));
                 padding: 6px 10px;
-                border-radius: 8px;
-                border: 2px solid rgb(235, 177, 50);
-                color: gray;
-                font-weight: bold;
-                background-color: white;
+                border: 2px solid var(--orange);
                 &:hover{
-                    background-color: rgb(235, 177, 50);
-                    color: white;
+                    color: var(--white);
                 }
             }
         }
     }
-
 }
 .p__loading-get-card{
     padding-top: 100px;
