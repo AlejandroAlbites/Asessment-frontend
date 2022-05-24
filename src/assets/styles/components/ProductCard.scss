@@ -1,24 +1,23 @@
+.div__block-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+}
 .card-products-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 20px
   
 }
-.div__card-product-container{
-    width: 200px;
-    height: 250px;
-  align-content: center;
-  border: 1px solid gray;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  margin-right: 10px;
-    .img__card-product-img{
-        width: 100px;
-        height: 100px;
-        
-    }
-    .h2__card-product-title{
-        font-size: 12px;
-    }
+.h1__products-title{
+    color: rgb(235, 177, 50);
+    text-align: center;
+}
+.p__loading-get-api{
+    font-weight: bold;
+    font-size: large;
+    color: gray;
+    text-align: center;
 }

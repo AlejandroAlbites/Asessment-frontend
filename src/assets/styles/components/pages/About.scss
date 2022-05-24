@@ -1,0 +1,35 @@
+.about-container{
+    margin:auto;
+    width: 800px;
+    height: 100vh;
+    background-color: white;
+
+    .div__about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     
+        .img__about-image{
+            margin: 150px 40px;
+            width: 350px;
+            height: 400px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 4px 1px gray;
+        }
+
+        .div__item-text{
+            margin: 20px 40px 20px 0px;
+            h1{
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                padding-top: 40px;
+            }
+
+        }
+
+    }
+
+}

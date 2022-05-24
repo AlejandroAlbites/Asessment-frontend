@@ -1,0 +1,28 @@
+.div__card-product-container{
+  width: 200px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: white;
+    .img__card-product-img{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .h2__card-product-title{
+        margin-top: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+   
+    
+}
+

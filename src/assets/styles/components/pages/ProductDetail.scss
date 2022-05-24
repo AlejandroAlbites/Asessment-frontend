@@ -1,0 +1,89 @@
+.div__product-container{
+    
+    margin:auto;
+    width: 800px;
+    height: 100vh;
+    background-color: white;
+
+    .div__item-product-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     
+        .img__item-image{
+            margin: 150px 40px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .div__item-text{
+            margin: 20px 40px 20px 0px;
+            h1{
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                padding-top: 40px;
+            }
+
+        }
+        .div__btn-container{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            
+            .btn-buy{
+                cursor: pointer;
+                padding: 6px 16px;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                font-weight: bold;
+                background-color: rgb(88, 184, 216);
+                &:hover{
+                    background-color: rgb(71, 154, 181);
+                }
+            }
+            .btn-cart{
+                cursor: pointer;
+                margin: 0px 20px;
+                padding: 6px 16px;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                font-weight: bold;
+                background-color: rgb(235, 177, 50);
+                &:hover{
+                    background-color: rgb(190, 142, 39);
+                }
+            }
+
+
+            .btn-watchlist{
+                cursor: pointer;
+                padding: 6px 10px;
+                border-radius: 8px;
+                border: 2px solid rgb(235, 177, 50);
+                color: gray;
+                font-weight: bold;
+                background-color: white;
+                &:hover{
+                    background-color: rgb(235, 177, 50);
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+.p__loading-get-card{
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: large;
+    color: gray;
+    text-align: center;
+}

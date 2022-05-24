@@ -1,40 +1,32 @@
-import axios, { Axios } from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getData } from '../store/reducers/GetApi.reducer';
+import { Card } from './Card';
 
 export const ProductCard = () => {
-  const url = 'https://fakestoreapi.com/products';
-
-  const [stateProducts, setStateProducts] = useState([]);
-
-  const getProducts = () => {
-    axios
-      .get(url)
-      .then(({ data }) => {
-        setStateProducts(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    return setStateProducts;
-  };
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getProducts();
+    dispatch(getData());
   }, []);
-  console.log(stateProducts);
+
+  const { getApi, error, loading } = useSelector(
+    (state) => state.getApiReducer
+  );
+  console.log(getApi);
+  if (error !== null) {
+    return <p>UPS! ocurrió un error. Error:{error}</p>;
+  }
+
   return (
-    <div>
-      <h1>Products</h1>
+    <div className="div__block-products">
+      <h1 className="h1__products-title">Products</h1>
+      {loading && <p className="p__loading-get-api">Loading...</p>}
+
       <div className="card-products-container">
-        {stateProducts.map(({ id, image, title }) => {
-          return (
-            <div key={id} className="div__card-product-container">
-              <img className="img__card-product-img" src={image} alt={title} />
-              <h2 className="h2__card-product-title">{title}</h2>
-              <p className="p__card-product-detail">Go to detail</p>
-            </div>
-          );
-        })}
+        {getApi.map(({ id, title, image }) => (
+          <Card key={id} id={id} title={title} image={image} />
+        ))}
       </div>
     </div>
   );

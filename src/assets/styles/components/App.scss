@@ -1,14 +1,23 @@
 .Nav__navigation-options{
-    // position: fixed;
-    background-color: teal;
+ 
+    background-color: rgb(235, 177, 50);
     height: 40px;
     width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
     
-    .link__navigation-options{
-        padding-left: 40px;
+    .link__navigation-option-home{
+        padding-left: 110px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        &:hover{
+            color: lightgray;
+        }
+    }
+    .link__navigation-option-about{
+        padding-left: 30px;
         color: white;
         font-size: 16px;
         font-weight: 700;
