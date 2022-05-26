@@ -21,13 +21,15 @@ export const ProductCard = () => {
   return (
     <div className="div__block-products">
       <h1 className="h1__products-title">Products</h1>
-      {loading && <p className="p__loading-get-api">Loading...</p>}
-
-      <div className="card-products-container">
-        {getApi.map(({ id, title, image }) => (
-          <Card key={id} id={id} title={title} image={image} />
-        ))}
-      </div>
+      {loading ? (
+        <p className="p__loading-get-api">Loading...</p>
+      ) : (
+        <div className="card-products-container">
+          {getApi.map(({ id, title, image }) => (
+            <Card key={id} id={id} title={title} image={image} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
